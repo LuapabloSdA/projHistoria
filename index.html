@@ -1,61 +1,64 @@
+<!DOCTYPE html>
 <html>
-    <style>
-    #menu{
+    <head>
+        <style>
+            /*Titulo da Página, cor, tudo*/
+        #menu_pag_cima{
             display: flex;
-            border-bottom: 4px solid ;
+            border-bottom: 2px solid red;
             width: 100%;
             height: 5%;
-            justify-content: flex-end;
-            gap: 7px;}
-        #centro{
-            border-style:solid;
-            border-width: 1px;
-            border-bottom: rgba (167, 145, 145, 0.678);
-            width: 60%;
-            height: 110%;
-            margin: 0 auto 0 auto ;
-            text-align: center;}
-        #titulo1{
-            text-align: center;
-            border-bottom: solid;
-            background-color:red;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+            color: rgb(255, 255, 255);
+            background-color: red;
         }
-        #adm{
-            text-align: center;}
-        #fonte1{
-            font-weight:bold;
-            text-align: left;}
+        /*Menu para navegar nas páginas*/
+        #menu_pag{
+            width:10%;
+            height: 100%;
+            border-style: solid;
+            border-color: green;
+            text-align: center;
+        }
+        /*parte do meio da página*/   
+        #centro_pag{
+            float: center;
+            align-items: center;
+            border-style:none;
+            height: 75%;
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            text-align:center;
+        }
+
         </style>
-        <body>
-            <title>Historia de Mar Vermelho</title>
-            <!--Aqui vai ficar o menu-->
-            <div id="menu">
-                <p>Menu</p>
-                <p>|</p>
-                <p>Artesanato</p>
-                <p>|</p>
-                <p>Escolas</p>
-                <p>|</p>
-                <p>Igrejas</p>
-                <p>|</p>
-                <p>Turismo</p>
-            </div>
-            <!--Menu, acaba aqui-->
-            <div id="centro">
-                <!--Titulo do tema-->
-                <h1 id="titulo1">Historia de Mar Vermelho</h1>
-                <!--Primeira imagem-->
-                <img src="https://user-images.githubusercontent.com/98188181/151177905-eb075c7d-1a2d-4a85-a34e-de9c96181293.png" width="300px">
-                <img src="https://user-images.githubusercontent.com/98188181/151178445-16d1ba2e-5386-4c55-bfeb-3ba613ebe31b.png" width="300px">
-                <!--Vai ficar em destaque, da História-->
-                <p id=adm>O município de Mar Vermelho tem sua origem ligada à história de Coutinho, um viajante que chegou à região por volta de 1800, construiu uma casa e iniciou a criação de gado e o cultivo da terra. Com a chegada de outros moradores, novas casas foram surgindo próximas a uma lagoa, que tinha, em suas margens, muitos pés de gravatás cujas folhas vermelhas caíam e formavam um grande 'mar vermelho' na lagoa, dando origem ao nome do município.</p>
-                <!--História de Mar Vermelho-->
-                <p id="adm">A propriedade foi transferida para o alferes Cazuza e, mais tarde, para o major Joaquim Canuto de Albuquerque Maranhão, que, em 1900, instalou o primeiro vapor de algodão. Em pouco tempo, Mar Vermelho transformou-se em núcleo comercial.
-                    Em 1910, foi criada a primeira feira e até 1947 teve um bom movimento. Com a construção da estrada de ferro que passava por Viçosa, os comerciantes expandiram seus negócios e muitos chegaram a fechar lojas em Mar Vermelho, por conta do difícil acesso.
-                    Ainda em 1910, um longo período de chuvas derrubou grande parte das encostas das serras e também da capela. Uma nova matriz só foi construída em 1922. Em 3 de fevereiro de 1962, através da Lei 2.431, Mar Vermelho foi desmembrado de Anadia.
-                    A principal atração do município é o clima serrano, que lhe rendeu a denominação de 'Suíça Alagoana'. Frio e seco, é aconselhado pelos especialistas como auxiliar no tratamento das doenças do aparelho respiratório. Destaca-se, também, a Lagoa Vermelha, abençoada pelo Cristo Redentor no alto da cidade. As festividades também atraem muitos visitantes, destacando-se: o carnaval, as festas religiosas - incluindo-se a da padroeira, Nossa Senhora da Conceição (8 de dezembro) - além das festas populares tradicionais.
-                    Gentílico: Mar-Vermelhense.</p>
-                    <p id="fonte1">Fonte:<a href="https://cidades.ibge.gov.br/brasil/al/mar-vermelho/historico">IBGE</a><p>
-            </div>
-        </body>
+    </head>
+    <body>
+        <!--Titulo da página-->
+        <title>Mar Vermelho</title>
+        <div id="menu_pag_cima">
+            <img src="" width="40" height="40">
+            <h1>Mar Vermelho</h1>
+        </div>
+        <!--Menu da Página-->
+        <div id="menu_pag">
+            <p style="text-decoration:underline;">Toque no nome da pagina qual deseja ir.</p>
+            <p><a href="">Historia</a></p>
+            <p><a href="">Artesanato</a></p>
+            <p><a href="">Turismo</a></p>
+
+        </div>
+        <!--Página Central-->
+        <div id="centro_pag">
+            <img src="">
+            <p>.</p>
+        </div>
+    </body>
 </html>
