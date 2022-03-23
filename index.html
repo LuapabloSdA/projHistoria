@@ -6,17 +6,17 @@
             #pag_cima{
                 display: flex;
                 width: 100%;
-                height: 100px;
-                background-color: red;
+                height: 90px;
+                background: red;
                 align-items: center;
                 color: rgb(255, 255, 255);
                 margin: 5px;
             }
             #dentro_cima{
                 display: flex;
-                width: 50%;
+                width: 46%;
                 height: 50px;
-                background-color: red;
+                background:none;
                 align-items: center;
                 margin: 90px;
                 justify-content: space-between;
@@ -32,6 +32,12 @@
                 padding: 5px;
 
             }
+            #pag_menu a{
+                text-decoration: none;
+                display: block;
+                padding: 10px 14px;
+                color: yellow;
+            }
             #pag_meio{
                 height: 50%;
                 width: 65%;
@@ -43,9 +49,20 @@
             #prefeitos{
                 height: 100%;
                 width: 150px;
-                background-color: blue;
+                background-color: rgb(29, 29, 184);
                 float: right;
                 text-align: center;
+            }
+            #prefeitos a{
+                text-decoration: none;
+                display: block;
+                padding: 10px 14px;
+                color: yellow;
+            }
+            #prefeitos a:hover{
+                transition: 0,5s;
+                background-color: rgba(11, 179, 6, 0.829);
+                color:rgb(255, 0, 0);
             }
             #traco{
                 text-decoration: underline;
@@ -62,9 +79,29 @@
             #links{
                 text-decoration: none;
             }
+            #pag_menu a:hover{
+                transition: 0,5s;
+                background-color: rgba(11, 179, 6, 0.829);
+                color:rgb(255, 0, 0);
+            }
+            button{
+                display: block;
+                border: none;
+                border-radius: 5px;
+                color: yellow;
+                background: rgb(251,7,7);
+                background: linear-gradient(90deg, rgba(251,7,7,1) 1%, rgba(0,194,255,1) 100%);
+                cursor: pointer;
+            }
+            button:hover{
+                opacity: 0.8;
+            }
+            button:active{
+                opacity: 0.6;
+            }
         </style>
     </head>
-    <body vlink="yellow" link="yellow">
+    <body>
         <div id="pag_cima">
             <div id="dentro_cima">
                 <img src="https://user-images.githubusercontent.com/98188181/152560019-7bcf0a8d-c130-493c-888f-2afe2c1331e1.png" width="60" height="60">
@@ -77,9 +114,10 @@
             <p><a id="links" href="https://luapablosda.github.io/projArtesanato/">Artesanato</a></p>
             <p><a id="links" href="https://luapablosda.github.io/projTurismo/">Turismo</p></a>
             <p><a id="links" href="https://luapablosda.github.io/projEscolas/">Escolas</a></p>
+            <a href="https://luapablosda.github.io/projFormContato/"><button>Reporta...</button></a>
         </div>
         <div id="pag_meio">
-            <h2 id="traco2">Origem de Mar Vermelho, com Dois Nomes</h2>
+            <h2 id="traco2">Origem de Mar Vermelho,<br>com Dois História</h2>
             <img src="https://user-images.githubusercontent.com/98188181/151178445-16d1ba2e-5386-4c55-bfeb-3ba613ebe31b.png" width="250" height="250">
             <h3>Tem duas Versão da origem, do nome Mar Vermelho</h3>
             <h4>Primeira versão</h4>
